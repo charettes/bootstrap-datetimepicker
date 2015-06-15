@@ -263,7 +263,7 @@
       var offset = this.component ? this.component.offset() : this.$element.offset();
       this.widget.css({
         top: offset.top + this.height,
-        left: offset.left
+        left: offset.left - this.$element.width() + this.height
       });
     },
 
